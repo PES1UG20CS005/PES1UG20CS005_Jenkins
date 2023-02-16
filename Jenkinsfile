@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'g++ -o PES1UG20CS005.cpp'
+                sh 'g++ -o output PES1UG20CS005.cpp'
             }
         }
         stage('Test') { 
             steps {
-                sh 'cat 1.cpp'
+                sh 'cat PES1UG20CS005.cpp'
             }
         }
         stage('Deploy') { 
